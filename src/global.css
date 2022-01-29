@@ -1,0 +1,86 @@
+@keyframes lineAnimation{
+  from{
+    border-right-color: rgba(255, 255, 255, .75);
+  }to{
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typingAnimation{
+  from{
+    width: 0;
+  }to{
+    width: 22rem;
+  }
+}
+
+@keyframes typingAnimationMobile{
+  from{
+    width: 0;
+  }to{
+    width: 16rem;
+  }
+}
+
+@keyframes fade{
+  from{
+    filter: opacity(0);
+    transform: translateX(-20px);
+  }to{
+    filter: opacity(1);
+    transform: initial;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+  font-family: 'IBM Plex Mono';
+  
+  /* monospace */
+}
+
+.app{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+  width: 100%;  
+  
+  font-family: 'IBM Plex Mono';
+  /* monospace */
+}
+
+.fadeIn{
+  animation: fade .5s forwards;
+}
+
+.line {
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, .75);
+  font-family: 'Space mono', monospace;
+  font-size: 2rem;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (min-width: 320px) {
+  .typing{
+    animation: lineAnimation 1s infinite normal, typingAnimationMobile 4s .2s normal;
+  }
+}
+
+@media (min-width: 767px) {
+  .typing{
+    animation: lineAnimation 1s infinite normal, typingAnimation 4s .2s normal;
+  }
+}
+
+#tsparticles {
+  position: absolute !important;
+}

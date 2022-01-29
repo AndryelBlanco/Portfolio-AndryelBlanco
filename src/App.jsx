@@ -1,12 +1,20 @@
 import { useState } from 'react'
-import './App.css'
+import { BrowserRouter as Router } from "react-router-dom";
+import HomePage from './views/Home/Home';
+import About from './views/About/About';
+import Header from './components/Header/Header'
+
+import './global.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <h1>TESTE</h1>
+       <Router>
+          <Header/>
+          <HomePage/>
+          <About/>
+       </Router>
     </div>
   )
 }
