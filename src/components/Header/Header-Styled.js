@@ -9,7 +9,7 @@ export const Backdrop = styled.div`
     height: 100%;
 
     background: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: fixed;
   }
   display: none;
 `;

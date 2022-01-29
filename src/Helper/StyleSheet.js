@@ -2,7 +2,7 @@ export const colors = {
   primary_color: '#00F6FF', 
   secondary_color: '#00FADC',
   background_color: '#050A1E',
-  secondary_color: '#E6F2EC',
+  // secondary_color: '#E6F2EC',
   terciary_color: '#00131A',
   alternate_color: '#001319',
 
