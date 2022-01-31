@@ -3,9 +3,17 @@ import { colors, device } from '../../Helper/StyleSheet';
 
 export const HomeContainer = styled.div`
   display: flex;
-  flex-direction: column;
+
+  @media ${device.mobileImage}  {
+    flex-direction: column;
+  }
+
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
+
+  padding: 1rem;
 
   width: 100%;
   height: 100vh;
@@ -29,7 +37,7 @@ export const MainText = styled.main`
   justify-content: center;
   gap: 1rem;
 
-  width: 100%;
+  width: fit-content;
 `;
 
 export const TopText = styled.span`
@@ -41,6 +49,10 @@ export const TopText = styled.span`
   }
 
   @media ${device.mobileL}{
+    font-size: 1.6rem;
+  }
+
+  @media ${device.laptopImage}{
     font-size: 1.6rem;
   }
 
@@ -56,6 +68,10 @@ export const NameText = styled.h1`
   }
 
   @media ${device.mobileL}{
+    font-size: 2.8rem;
+  }
+
+  @media ${device.laptopImage}{
     font-size: 2.8rem;
   }
   
@@ -78,6 +94,36 @@ export const BottomText = styled.span`
     font-size: 1.3rem;
   }
 
+  @media ${device.laptopImage}  {
+    font-size: 1.3rem;
+  }
+
   color: ${colors.primary_color};
   font-size: 1.4rem;
+`;
+
+export const AvatarSvg = styled.img`
+  transition: .5s ease-in-out;
+  
+  @media ${device.mobileImage}  {
+    display: flex;
+    margin-left: 0;
+
+    width: 260px;
+    height: 260px;
+  }
+
+  @media ${device.laptopImage} {
+    display: flex;
+    width: 300px;
+    height: 300px;
+
+    margin-left: -5%;
+  }
+
+  display: flex;
+  width: 400px;
+  height: 400px;
+
+  margin-left: -10%;
 `;

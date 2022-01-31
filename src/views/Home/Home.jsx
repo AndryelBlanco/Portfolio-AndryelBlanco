@@ -1,6 +1,7 @@
 import React from 'react';
 import Particles from "react-tsparticles";
-import { BottomText, HomeContainer, MainText, NameText, TopText } from './Home-Styled';
+import { AvatarSvg, BottomText, HomeContainer, MainText, NameText, TopText } from './Home-Styled';
+import Avatar from '../../assets/Avatar.svg';
 
 const HomePage = () => {
   const particlesInit = (main) => {
@@ -11,8 +12,9 @@ const HomePage = () => {
 
   return (
     <HomeContainer>
+      <AvatarSvg src='Avatar 3D de Andryel Blanco' src={Avatar} />
       <MainText>
-        <TopText>Hey, sou </TopText>
+        <TopText >Hey, sou </TopText>
         <NameText>Andryel Blanco</NameText>
         <BottomText className='line typing'>{'>'}_Desenvolvedor Front-End</BottomText>
       </MainText>

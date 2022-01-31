@@ -5,6 +5,7 @@ import About from './views/About/About';
 import Header from './components/Header/Header'
 
 import './global.css'
+import Projects from './views/Projects/Projects';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           <Header/>
           <HomePage/>
           <About/>
+          <Projects/>
        </Router>
     </div>
   )

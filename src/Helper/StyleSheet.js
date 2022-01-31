@@ -38,6 +38,8 @@ export const device = {
   mobileHeader: `(min-width: ${size.mobileS}) and (max-width: 610px)`,
   mobileL: `(min-width: ${size.mobileL}) and (max-width: ${size.tabletMin})`,
   tablet: `(min-width: ${size.tablet}) and (max-width: ${size.laptopMin})`,
+  mobileImage: `(min-width: 320px) and (max-width: 780px)`,
+  laptopImage: `(min-width: ${size.tablet}) and (max-width: 1030px)`,
   laptop: `(min-width: ${size.laptop})`,
   laptopM: `(min-width: ${size.laptopM})`,
   laptopL: `(min-width: ${size.laptopL})`,

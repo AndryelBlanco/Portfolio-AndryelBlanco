@@ -19,7 +19,7 @@ const Header = () => {
     if(width <= 610){
       setShowSidebar(!showSidebar)
     }else{
-      setShowSidebar(true)
+      setShowSidebar(false)
     }
   }
 
@@ -49,9 +49,9 @@ const Header = () => {
             <LogoMobile>{'{A}'}</LogoMobile>
             <HeaderButtons>
             <HashLink to="/#top"><ButtonMobile isSelected={tabSelected == 'Home' ? true : false} onClick={() => changeTabs('Home')}>{tabSelected == 'Home' ? '>_Início' : 'Início'}</ButtonMobile></HashLink>
-        <HashLink to="/#about-page"><ButtonMobile isSelected={tabSelected == 'About' ? true : false} onClick={() => changeTabs('About')} >{tabSelected == 'About' ? '>_Sobre' : 'Sobre'}</ButtonMobile></HashLink>
-        <HashLink to="/#project-page"><ButtonMobile isSelected={tabSelected == 'Project' ? true : false} onClick={() => changeTabs('Project')} >{tabSelected == 'Project' ? '>_Projetos' : 'Projetos'}</ButtonMobile></HashLink>
-        <HashLink to="/#contact-page"><ButtonMobile isSelected={tabSelected == 'Contact' ? true : false} onClick={() => changeTabs('Contact')} >{tabSelected == 'Contact' ? '>_Contato' : 'Contato'}</ButtonMobile></HashLink>
+            <HashLink to="/#about-page"><ButtonMobile isSelected={tabSelected == 'About' ? true : false} onClick={() => changeTabs('About')} >{tabSelected == 'About' ? '>_Sobre' : 'Sobre'}</ButtonMobile></HashLink>
+            <HashLink to="/#project-page"><ButtonMobile isSelected={tabSelected == 'Project' ? true : false} onClick={() => changeTabs('Project')} >{tabSelected == 'Project' ? '>_Projetos' : 'Projetos'}</ButtonMobile></HashLink>
+            <HashLink to="/#contact-page"><ButtonMobile isSelected={tabSelected == 'Contact' ? true : false} onClick={() => changeTabs('Contact')} >{tabSelected == 'Contact' ? '>_Contato' : 'Contato'}</ButtonMobile></HashLink>
             </HeaderButtons>
           </HeaderComponentMobile>
         </SidebarMobile>
