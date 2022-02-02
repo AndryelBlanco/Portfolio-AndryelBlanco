@@ -199,7 +199,7 @@ export const HamburgerMenu = styled.button`
     z-index: 999;
 
     border: none;
-    background: none;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
 
     margin-left: 80%;
     margin-top: 10%;

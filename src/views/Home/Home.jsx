@@ -12,7 +12,7 @@ const HomePage = () => {
 
   return (
     <HomeContainer>
-      <AvatarSvg src='Avatar 3D de Andryel Blanco' src={Avatar} />
+      <AvatarSvg alt='Avatar 3D de Andryel Blanco' src={Avatar} />
       <MainText>
         <TopText >Hey, sou </TopText>
         <NameText>Andryel Blanco</NameText>

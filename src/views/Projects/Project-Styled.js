@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../../Helper/StyleSheet';
+import { colors, device } from '../../Helper/StyleSheet';
 
 export const ProjectsContainer = styled.div`
   display: flex;
@@ -16,12 +16,23 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const PageTitle = styled.h1`
+  @media ${device.mobileS}{
+    font-size: 1.4rem;
+  }
+
+  @media ${device.mobileL}{
+    font-size: 1.6rem;
+  }
+
   font-size: 2rem;
   font-weight: 600;
   color: ${colors.white_color};
 
   justify-self: flex-start;
   margin-top: 2rem;
+  margin-bottom: 5%;
+
+  transition: .5s ease;
 `;
 
 export const CardsContainer = styled.div`

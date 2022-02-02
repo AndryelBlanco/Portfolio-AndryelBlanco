@@ -6,6 +6,7 @@ import Header from './components/Header/Header'
 
 import './global.css'
 import Projects from './views/Projects/Projects';
+import Contact from './views/Contact/Contact';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <HomePage/>
           <About/>
           <Projects/>
+          <Contact/>
        </Router>
     </div>
   )

@@ -1,6 +1,6 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { colors, device } from '../../Helper/StyleSheet';
-import PortraitImg from '../../assets/foto.svg'
+import PortraitImg from '../../assets/Foto2.png'
 
 export const AboutPage = styled.div`
   @media ${device.mobileS}{
@@ -61,13 +61,14 @@ export const ImageContainer = styled.div`
     content: "";
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
 
     width: 290px;
     height: 290px;
     
     background: url(${PortraitImg}), linear-gradient(180deg, #00BBFF 100%, rgba(5, 10, 30, 0.28) 100%);
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 10px;
     
     position: absolute;
@@ -101,6 +102,8 @@ export const AboutTitle = styled.h2`
   font-weight: 300;
   font-family: 'IBM Plex Mono';
   color: ${colors.secondary_color};
+
+  transition: .6 ease-in-out;
 `;
 
 export const AboutSpanText = styled.p`

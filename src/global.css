@@ -32,6 +32,25 @@
   }
 }
 
+
+@keyframes linearRotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes BackLinearRotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-180deg);
+  }
+}
+
 *{
   margin: 0;
   padding: 0;
